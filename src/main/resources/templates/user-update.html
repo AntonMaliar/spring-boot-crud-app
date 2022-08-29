@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Update User</title>
+</head>
+<body>
+	<form action="#" th:action="@{/user-update}" th:object="${user}" method="post">
+		<label for="id">Id:</label>
+		<input readonly type="text" id="id" th:field="*{id}">
+		<label for="name">Name:</label>
+		<input type="text" id="name" th:field="*{name}">
+		<input type="submit" value="Update">
+	</form>
+</body>
+</html>
